@@ -90,3 +90,30 @@ Book Consultation
 }
 
 export default App;
+.vision-box h3{
+  color:#D4AF37;
+  margin-bottom:12px;
+  font-size:1.3rem;
+}
+
+.vision-box p{
+  color:rgba(255,255,255,0.7);
+  line-height:1.7;
+}.vision-box:hover{
+  transform:translateY(-8px);
+  border-color:rgba(212,175,55,0.3);
+}.vision-box{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(212,175,55,0.12);
+  padding:30px;
+  border-radius:16px;
+  backdrop-filter:blur(20px);
+  transition:0.3s;
+  }.vision-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:30px;
+}.vision{
+  padding:140px 7%;
+  background:#07170F;
+}
