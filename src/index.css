@@ -1,5 +1,8 @@
 import { useEffect } from "react";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "@studio-freight/lenis";.service-card:hover,
+.vision-box:hover {
+  transform: translateY(-6px);
+}
 import gsap from "gsap";
 
 function App() {
@@ -116,4 +119,7 @@ export default App;
 }.vision{
   padding:140px 7%;
   background:#07170F;
+}
+button, .service-card, .vision-box, .about-text {
+  transition: all 0.3s ease;
 }
