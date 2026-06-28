@@ -1,0 +1,92 @@
+import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
+import gsap from "gsap";
+
+function App() {
+
+  useEffect(() => {
+
+    const lenis = new Lenis({
+      duration: 1.2,
+      smoothWheel: true,
+      smoothTouch: false
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    gsap.from(".hero-title",{
+      y:100,
+      opacity:0,
+      duration:1.4,
+      ease:"power4.out"
+    });
+
+    gsap.from(".hero-text",{
+      y:60,
+      opacity:0,
+      duration:1.8,
+      delay:.4
+    });
+
+    gsap.from(".hero-btn",{
+      scale:.7,
+      opacity:0,
+      duration:1,
+      delay:.8
+    });
+
+  },[]);
+
+  return (
+
+<div className="app">
+
+<div className="background"></div>
+
+<section className="hero">
+
+<div className="overlay"></div>
+
+<div className="hero-content">
+
+<p className="hero-small">
+
+Luxury Real Estate
+
+</p>
+
+<h1 className="hero-title">
+
+Dream Home Flats
+
+</h1>
+
+<p className="hero-text">
+
+Helping Families Find Their Dream Property
+Across Gurgaon & Dwarka Expressway.
+
+</p>
+
+<button className="hero-btn">
+
+Book Consultation
+
+</button>
+
+</div>
+
+</section>
+
+</div>
+
+  );
+
+}
+
+export default App;
