@@ -1,0 +1,41 @@
+{
+  "name": "dreamhome-luxury",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Luxury Real Estate Landing Page built with React, Vite, GSAP and TailwindCSS",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "framer-motion": "^11.2.10",
+    "gsap": "^3.12.7",
+    "lucide-react": "^0.469.0",
+    "react": "^18.3.1",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0",
+    "react-intersection-observer": "^9.15.1",
+    "react-router-dom": "^6.30.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.7"
+  }
+}
