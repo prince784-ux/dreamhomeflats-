@@ -78,6 +78,7 @@ function App() {
           </p>
 
           <h1 className="hero-title">
+            import VisionSection from "./components/Vision/VisionSection";
             Ultra Luxury<br />
             Residences & Villas
           </h1>
