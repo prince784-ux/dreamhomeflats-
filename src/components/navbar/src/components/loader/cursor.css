@@ -1,0 +1,57 @@
+.cursor{
+
+width:26px;
+
+height:26px;
+
+border:2px solid #D4AF37;
+
+border-radius:50%;
+
+position:fixed;
+
+pointer-events:none;
+
+transform:translate(-50%,-50%);
+
+z-index:999999;
+
+transition:
+
+width .25s,
+
+height .25s,
+
+background .25s,
+
+border .25s,
+
+transform .08s;
+
+mix-blend-mode:screen;
+
+box-shadow:
+
+0 0 20px rgba(212,175,55,.7),
+
+0 0 50px rgba(212,175,55,.25);
+
+}
+
+a:hover~.cursor{
+
+width:60px;
+
+height:60px;
+
+}
+
+button:hover~.cursor{
+
+width:60px;
+
+height:60px;
+
+background:rgba(212,175,55,.15);
+
+}
