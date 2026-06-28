@@ -90,4 +90,5 @@ function App() {
 
           <div className="hero-actions">
             <button className="hero-btn">Explore Properties</button>
-           
+           useScrollAnimations();
+            
